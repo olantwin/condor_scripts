@@ -1,0 +1,8 @@
+executable              = sim.sh
+arguments               = $(ProcId)
+output                  = sim.$(ClusterId).$(ProcId).out
+error                   = sim.$(ClusterId).$(ProcId).err
+log                     = sim.$(ClusterId).log
+transfer_output_files = ""
++JobFlavour = "workday"
+queue 100
