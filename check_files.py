@@ -10,8 +10,8 @@ def check_files(jobname, n_jobs):
     chain = ROOT.TChain('cbmsim')
 
     for i in [
-            '''root://eoslhcb.cern.ch//eos/ship/user/olantwin/'''
-            '''{}/{}/ship.conical.MuonBack-TGeant4.root'''.format(
+            '''root://eospublic.cern.ch//eos/experiment/ship/user/olantwin/'''
+            '''{0}/{1}/ship.conical.MuonBack-TGeant4.root'''.format(
                 jobname,
                 n
             )

@@ -1,5 +1,5 @@
 #!/bin/bash
-source /afs/cern.ch/user/o/olantwin/SHiP_Software/SHiP_setup.sh
+source /afs/cern.ch/user/o/olantwin/SHiP_Software/setup.sh
 set -ux
 echo "Starting script."
 DIR=$1
