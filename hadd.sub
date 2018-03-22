@@ -1,0 +1,8 @@
+executable              = hadd.sh 
+arguments               = "$(filename) root://eospublic.cern.ch//eos/experiment/ship/user/olantwin/$(directory)/{1..$(N)}/$(filename)"
+output                  = hadd.$(ClusterId).$(ProcId).out
+error                   = hadd.$(ClusterId).$(ProcId).err
+log                     = hadd.$(ClusterId).log
+transfer_output_files = ""
++JobFlavour = "workday"
+queue

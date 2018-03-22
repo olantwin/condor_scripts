@@ -1,9 +1,9 @@
 executable = sim.sh
-arguments = $(ProcId)
+arguments = $(directory) $(ProcId) $(N)
 output = sim.$(ClusterId).$(ProcId).out
 error = sim.$(ClusterId).$(ProcId).err
 log = sim.$(ClusterId).log
 requirements = (CERNEnvironment =!= "qa")
 transfer_output_files = ""
 +JobFlavour = "workday"
-queue 100
+queue $(N)

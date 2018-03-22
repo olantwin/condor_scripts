@@ -1,0 +1,8 @@
+executable              = rec.sh
+arguments               = $(directory) $(ProcId) $(N)
+output                  = rec.$(ClusterId).$(ProcId).out
+error                   = rec.$(ClusterId).$(ProcId).err
+log                     = rec.$(ClusterId).log
+transfer_output_files = ""
++JobFlavour = "workday"
+queue $(N)

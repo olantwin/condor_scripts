@@ -1,0 +1,13 @@
+VARS ALL_NODES directory="integration_test_straight_coil_gaps" N="100"
+VARS hadd filename="ship.conical.MuonBack-TGeant4.root"
+VARS haddrec filename="ship.conical.MuonBack-TGeant4_rec.root"
+Job simulation sim.sub
+Job hadd hadd.sub
+Job rec rec.sub
+Job haddrec hadd.sub
+DOT dag.dot UPDATE
+
+Parent simulation Child hadd rec
+Parent rec Child haddrec
+# TODO delete individual files and dirs after successful hadd
+# TODO add flux_map and digitisation
