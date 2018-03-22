@@ -1,4 +1,4 @@
-VARS ALL_NODES directory="integration_test_straight_coil_gaps" N="100"
+VARS ALL_NODES directory="jobname" N="100"
 VARS hadd filename="ship.conical.MuonBack-TGeant4.root"
 VARS haddrec filename="ship.conical.MuonBack-TGeant4_rec.root"
 Job simulation sim.sub
